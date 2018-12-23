@@ -12,5 +12,28 @@ const prefix = "!";
 
 
 
+//client.on("guildCreate", guild => {
+  //guild.defaultChannel.sendMessage(`test`);
+  
+  
+
+//})
+
+
+
+
+// Commands
+client.on('message', message => {
+
+
+  // check if user has that is
+  
+  msg = message.content.toLowerCase();
+
+    if (message.author.bot) return;
+    if (!message.content.startsWith("!")) return;
+
+})
+
 // Bot 
-client.login(process.env.BOT_TOKEN);  // BOT_TOKEN  
+client.login(process.env.BOT_TOKEN);  //BOT_TOKEN  
