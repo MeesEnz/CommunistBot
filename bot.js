@@ -34,7 +34,7 @@ client.on('message', message => {
 
 
 
-    if (msg.startsWith(prefix + "ping")) {
+    if (message.content.startsWith(prefix + "ping")) {
       message.channel.send({embed: {
         color: 3447003,
         title: "Client ping",
