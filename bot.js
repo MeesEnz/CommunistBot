@@ -35,5 +35,13 @@ client.on('message', message => {
 
 })
 
+if (message.content.startsWith(prefix + "food")) {
+  message.channel.sendMessage("This is communism, everyone has the same ammount of food. which is nothing");
+}
+
+
+
+
+
 // Bot 
 client.login(process.env.BOT_TOKEN);  //BOT_TOKEN  
