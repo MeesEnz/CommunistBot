@@ -34,9 +34,9 @@ client.on('message', message => {
 
 })
 
-    if(message.content.startswith("!ping")){
-        message.reply("Pong Pong, boii!")
-    }
+    if (message.content.startsWith(prefix + "pong")) {
+    message.channel.sendMessage("Ping :)");
+  }
 
 
 
