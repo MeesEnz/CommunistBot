@@ -31,11 +31,10 @@ client.on('message', message => {
   msg = message.content.toLowerCase();
 
     if (message.author.bot) return;
-    if (!message.content.startsWith(`${prefix}`)) return;
 
 })
 
-if (message.content.startsWith(prefix + "food")) {
+if (message.content.startsWith("!food")) {
   message.channel.sendMessage("This is communism, everyone has the same ammount of food. which is nothing");
 }
 
