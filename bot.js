@@ -40,7 +40,7 @@ client.on('message', message => {
         title: "Client ping",
         description: 'pong' + " " + "***" + client.ping + "***" + "ms"
       }});
-  }else
+  }
 
   
   })
