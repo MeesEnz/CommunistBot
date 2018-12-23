@@ -31,7 +31,7 @@ client.on('message', message => {
   msg = message.content.toLowerCase();
 
     if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
+    if (!message.content.startsWith("!")) return;
 
 })
 
