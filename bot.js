@@ -34,10 +34,6 @@ client.on('message', message => {
 
 })
 
-if (message.content.startsWith("!food")) {
-  message.channel.sendMessage("This is communism, everyone has the same ammount of food. which is nothing");
-}
-
 
 
 
