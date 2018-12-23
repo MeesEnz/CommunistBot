@@ -34,9 +34,13 @@ client.on('message', message => {
 
 
 
-if(message.content == "!ping"){
-    message.reply("Pong :)");
-}
+    if (msg.startsWith(prefix + "ping")) {
+      message.channel.send({embed: {
+        color: 3447003,
+        title: "Client ping",
+        description: 'pong' + " " + "***" + client.ping + "***" + "ms"
+      }});
+  }else
 
   
   })
