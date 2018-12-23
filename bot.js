@@ -34,7 +34,9 @@ client.on('message', message => {
 
 })
 
-
+    if(message.content.startswith("!ping")){
+        message.reply("Pong Pong, boii!")
+    }
 
 
 
