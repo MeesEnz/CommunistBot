@@ -35,7 +35,9 @@ client.on('message', message => {
 })
 
 
-
+if(message.content == "!ping"){
+    message.reply("Pong :)");
+}
 
 // Bot 
 client.login(process.env.BOT_TOKEN);  //BOT_TOKEN  
