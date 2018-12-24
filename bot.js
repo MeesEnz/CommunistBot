@@ -8,16 +8,7 @@ client.on('ready', () => {
 });
 
 // Prefix
-const prefix = "!";
-
-
-
-//client.on("guildCreate", guild => {
-  //guild.defaultChannel.sendMessage(`test`);
-  
-  
-
-//})
+const prefix = ";";
 
 
 
@@ -25,8 +16,6 @@ const prefix = "!";
 // Commands
 client.on('message', message => {
 
-
-  // check if user has that is
   
   msg = message.content.toLowerCase();
 
@@ -34,6 +23,7 @@ client.on('message', message => {
 
 
 
+    // !ping
     if (message.content.startsWith(prefix + "ping")) {
       message.channel.send({embed: {
         color: 3447003,
@@ -45,4 +35,4 @@ client.on('message', message => {
   
   })
 // Bot 
-client.login(process.env.BOT_TOKEN);  //BOT_TOKEN  
+client.login(process.env.BOT_TOKEN);  //BOT_TOKEN   
